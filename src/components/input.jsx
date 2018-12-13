@@ -3,10 +3,17 @@ import PropTypes from 'prop-types'
 import YourAgeInput from './inputs/yourAgeInput'
 
 class Input extends React.Component{
+
+  passAgeInputToApp = (age) => {
+    let x = age;
+    this.props.age(x);
+  }
+
   render () {
     return (
       <div id='input-wrapper' className='center-me'>
-        <YourAgeInput />
+        <YourAgeInput
+          onHandleAgeInput={this.passAgeInputToApp} />
 
         <div id='your-gender-input' className='input-group'>
           <div className='input-header'>Select Your Gender</div>

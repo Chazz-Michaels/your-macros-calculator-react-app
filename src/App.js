@@ -20,12 +20,27 @@ class App extends Component {
     ]
   }
 
+  passAgeInputToState = (age) => {
+    this.setState({ age: age })
+  }
+
   render() {
     return (
       <div id="main-body">
         <Brand />
-        <Input />
-        <Output />
+        <Input
+          age={this.passAgeInputToState} />
+        <Output
+          age={this.state.age}
+          gender={this.state.gender}
+          weight={this.state.weight}
+          heightFt={this.state.heightFt}
+          heightIn={this.state.heightIn}
+          activityLevel={this.state.activityLevel}
+          goal={this.state.goal}
+          protein={this.state.protein}
+          carbs={this.state.carbs}
+          fats={this.state.fats} />
         <Footer />
       </div>
     );
