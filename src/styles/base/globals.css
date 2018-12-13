@@ -1,0 +1,22 @@
+.main-content-wrapper {
+  min-height: 100vh;
+  background-color: var(--gray4);
+  padding: 0 2rem;
+}
+.center-me {
+  text-align: center;
+}
+body {
+  font-family: var(--fontMain);
+  background-color: var(--gray3);
+  color: darker(var(--gray4), 25%);
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
