@@ -1,4 +1,6 @@
 @import "./styles/base/variables.css";
 @import "./styles/base/globals.css";
-@import "./styles/partials/navigation.css";
 @import "./styles/partials/brand.css";
+@import "./styles/partials/input.css";
+@import "./styles/partials/output.css";
+@import "./styles/partials/footer.css";

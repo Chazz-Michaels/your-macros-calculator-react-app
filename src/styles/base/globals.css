@@ -1,16 +1,23 @@
-.main-content-wrapper {
+*, html {
+  font-family: var(--fontMain);
+  font-weight: 400;
+  font-size: 100%;
+}
+body {
   min-height: 100vh;
-  background-color: var(--gray4);
-  padding: 0 2rem;
+  width: 100%;
+  background-color: var(--darkgray);
+  color: var(--white);
+}
+#main-body {
+  background-color: var(--wine);
+  margin: 2rem 0 0 0;
+  padding: 10rem 0 0 0;
 }
 .center-me {
   text-align: center;
 }
-body {
-  font-family: var(--fontMain);
-  background-color: var(--gray3);
-  color: darker(var(--gray4), 25%);
-}
+
 
 @keyframes App-logo-spin {
   from {

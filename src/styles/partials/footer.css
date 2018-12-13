@@ -1,0 +1,40 @@
+#footer-wrapper {
+  background: var(--darkgray);
+  padding: 1.2rem 0 0.4rem 0;
+  width: 100%;
+}
+.fa {
+  font-size: 3rem;
+  margin: 0.8rem 0.4rem;
+  padding: 1rem;
+  color: var(--white);
+  border: 2px solid var(--white);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  transition: ease background-color 0.2s;
+}
+.fa:hover {
+  text-decoration: none;
+  cursor: pointer;
+  /*color: var(--white);
+  border-color: var(--white);*/
+}
+
+.fa-facebook:hover {
+  background-color: #3b5998;
+}
+.fa-linkedin:hover {
+  background-color: #0077B5;
+}
+.fa-instagram:hover {
+  background: linear-gradient(#cd486b, #8a3ab9);
+}
+.fa-github:hover {
+  background-color: #6e5494;
+}
+#signature {
+  font-size: 0.8rem;
+  font-weight: 100;
+  margin: 0.8rem 0 0 0;
+}

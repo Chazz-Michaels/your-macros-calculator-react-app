@@ -8,7 +8,7 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div id="dad-body">
+      <div id="main-body">
         <Brand />
         <Input />
         <Output />
