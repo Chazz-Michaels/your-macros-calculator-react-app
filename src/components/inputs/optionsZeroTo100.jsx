@@ -1,0 +1,96 @@
+import React from 'react'
+
+class OptionsZeroTo100 extends React.Component {
+  render () {
+    return (
+      <React.Fragment>
+        <option
+          type='select'
+          value='0'>0
+        </option>
+        <option
+          type='select'
+          value='5'>5
+        </option>
+        <option
+          type='select'
+          value='10'>10
+        </option>
+        <option
+          type='select'
+          value='15'>15
+        </option>
+        <option
+          type='select'
+          value='20'>20
+        </option>
+        <option
+          type='select'
+          value='25'>25
+        </option>
+        <option
+          type='select'
+          value='30'>30
+        </option>
+        <option
+          type='select'
+          value='35'>35
+        </option>
+        <option
+          type='select'
+          value='40'>40
+        </option>
+        <option
+          type='select'
+          value='45'>45
+        </option>
+        <option
+          type='select'
+          value='50'>50
+        </option>
+        <option
+          type='select'
+          value='55'>55
+        </option>
+        <option
+          type='select'
+          value='60'>60
+        </option>
+        <option
+          type='select'
+          value='65'>65
+        </option>
+        <option
+          type='select'
+          value='70'>70
+        </option>
+        <option
+          type='select'
+          value='75'>75
+        </option>
+        <option
+          type='select'
+          value='80'>80
+        </option>
+        <option
+          type='select'
+          value='85'>85
+        </option>
+        <option
+          type='select'
+          value='90'>90
+        </option>
+        <option
+          type='select'
+          value='95'>95
+        </option>
+        <option
+          type='select'
+          value='100'>100
+        </option>
+      </React.Fragment>
+    )
+  }
+}
+
+export default OptionsZeroTo100;

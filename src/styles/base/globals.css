@@ -13,6 +13,7 @@ body {
   background-color: var(--wine);
   margin: 2rem 0 0 0;
   padding: 10rem 0 0 0;
+  border-top: 4px solid var(--gray);
 }
 .center-me {
   text-align: center;

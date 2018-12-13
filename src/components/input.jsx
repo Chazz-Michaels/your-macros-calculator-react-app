@@ -5,6 +5,7 @@ import YourWeightInput from './inputs/yourWeightInput'
 import YourHeightInput from './inputs/yourHeightInput'
 import YourActivityLevelInput from './inputs/yourActivityLevelInput'
 import YourGoalInput from './inputs/yourGoal'
+import YourMacroSplitInput from './inputs/yourMacroSplitInput'
 
 class Input extends React.Component{
 
@@ -28,6 +29,8 @@ class Input extends React.Component{
         <YourActivityLevelInput />
 
         <YourGoalInput />
+
+        <YourMacroSplitInput />
 
       </div>
     )

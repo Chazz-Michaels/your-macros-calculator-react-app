@@ -11,7 +11,7 @@
   width: 100%;
   margin: auto;
   background: var(--darkgray);
-  border: 5px solid var(--gray);
+  border: 5px solid var(--white);
   border-top: none;
 }
 #brand {
@@ -21,7 +21,7 @@
 }
 #motto {
   font-size: 1rem;
-  max-width: 450px;
+  max-width: 400px;
   margin: inherit;
   padding: 0 0 0.8rem 0;
 }

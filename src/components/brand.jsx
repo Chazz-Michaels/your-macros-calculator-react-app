@@ -7,7 +7,7 @@ class Brand extends React.Component {
         <div id='brand-wrapper' className='center-me'>
           <div id='brand'>Your Macros</div>
           <div id='motto'>
-            A quick way to figure out the correct macronutrients
+            A quick way to crunch the numbers
             you need to achieve your fitness goals.
           </div>
         </div>
