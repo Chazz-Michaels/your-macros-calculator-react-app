@@ -6,6 +6,20 @@ import Footer from './components/footer';
 import './App.css';
 
 class App extends Component {
+  state = {
+    age: [],
+    gender: [],
+    weight: [],
+    height: [
+      { feet: '', inches: '' }
+    ],
+    activityLevel: [],
+    goal: [],
+    macros: [
+      { protein: '', carbs: '', fats: '' }
+    ]
+  }
+
   render() {
     return (
       <div id="main-body">

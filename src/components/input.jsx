@@ -1,14 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import YourAgeInput from './inputs/yourAgeInput'
 
 class Input extends React.Component{
   render () {
     return (
       <div id='input-wrapper' className='center-me'>
-        <div id='your-age-input' className='input-group'>
-          <div className='input-header'>Enter Your Age:</div>
-          <input name='age' placeholder='Your age' />
-        </div>
+        <YourAgeInput />
 
         <div id='your-gender-input' className='input-group'>
           <div className='input-header'>Select Your Gender</div>
