@@ -42,6 +42,10 @@ class App extends Component {
     let currentFeet = this.state.height[0].feet;
     this.setState({ height: [{ feet: currentFeet, inches: x }] });
   }
+  passActivityLevelInputToState = (activityLevel) => {
+    let x = activityLevel;
+    this.setState({ activityLevel: x });
+  }
 
   render() {
     return (
@@ -52,7 +56,8 @@ class App extends Component {
           gender={this.passGenderInputToState}
           weight={this.passWeightInputToState}
           heightFeet={this.passHeightFeetInputToState}
-          heightInches={this.passHeightInchesInputToState}/>
+          heightInches={this.passHeightInchesInputToState}
+          activityLevel={this.passActivityLevelInputToState}/>
         <Output
           age={this.state.age}
           gender={this.state.gender}

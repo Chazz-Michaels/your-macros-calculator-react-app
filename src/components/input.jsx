@@ -26,9 +26,13 @@ class Input extends React.Component{
     let x = feet;
     this.props.heightFeet(x);
   }
-  passHeightInchesToApp = (inches) => {
+  passHeightInchesInputToApp = (inches) => {
     let x = inches;
     this.props.heightInches(x);
+  }
+  passActivityLevelInputToApp = (activityLevel) => {
+    let x = activityLevel;
+    this.props.activityLevel(x);
   }
 
   render () {
@@ -45,9 +49,10 @@ class Input extends React.Component{
 
         <YourHeightInput
           onHandleHeightFeetInput={this.passHeightFeetInputToApp}
-          onHandleHeightInchesInput={this.passHeightInchesToApp}/>
+          onHandleHeightInchesInput={this.passHeightInchesInputToApp}/>
 
-        <YourActivityLevelInput />
+        <YourActivityLevelInput
+          onHAndleActivityLevelInput={this.passActivityLevelInputToApp}/>
 
         <YourGoalInput />
 
