@@ -13,7 +13,6 @@ class Input extends React.Component{
     let x = age;
     this.props.age(x);
   }
-
   passGenderInputToApp = (gender) => {
     let x = gender;
     this.props.gender(x);
@@ -22,6 +21,14 @@ class Input extends React.Component{
   passWeightInputToApp = (weight) => {
     let x = weight;
     this.props.weight(x);
+  }
+  passHeightFeetInputToApp = (feet) => {
+    let x = feet;
+    this.props.heightFeet(x);
+  }
+  passHeightInchesToApp = (inches) => {
+    let x = inches;
+    this.props.heightInches(x);
   }
 
   render () {
@@ -36,7 +43,9 @@ class Input extends React.Component{
         <YourWeightInput
           onHandleWeightInput={this.passWeightInputToApp} />
 
-        <YourHeightInput />
+        <YourHeightInput
+          onHandleHeightFeetInput={this.passHeightFeetInputToApp}
+          onHandleHeightInchesInput={this.passHeightInchesToApp}/>
 
         <YourActivityLevelInput />
 

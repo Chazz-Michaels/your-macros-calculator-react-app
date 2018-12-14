@@ -8,8 +8,8 @@ class Output extends React.Component{
         <div className='output-header'>Your Age: {this.props.age}</div>
         <div className='output-header'>Your Gender: {this.props.gender}</div>
         <div className='output-header'>Your Weight: {this.props.weight}</div>
-        <div className='output-header'>Your Height(Ft): {this.props.heightFt}</div>
-        <div className='output-header'>Your Height (In): {this.props.heightIn}</div>
+        <div className='output-header'>Your Height (Ft): {this.props.heightFeet}</div>
+        <div className='output-header'>Your Height (In): {this.props.heightInches}</div>
         <div className='output-header'>Your Activity Level: {this.props.activityLevel}</div>
         <div className='output-header'>Your goal: {this.props.goal}</div>
         <div className='output-header'>Your Protein: {this.props.protein}</div>

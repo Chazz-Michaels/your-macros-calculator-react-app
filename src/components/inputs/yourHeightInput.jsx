@@ -1,13 +1,25 @@
 import React from 'react'
 
 class YourHeightInput extends React.Component {
+
+  handleHeightFeetInput = (e) => {
+    let value = e.target.value;
+    this.props.onHandleHeightFeetInput(value);
+  }
+
+  handleHeightInchesInput = (e) => {
+    let value = e.target.value;
+    this.props.onHandleHeightInchesInput(value);
+  }
+
   render () {
     return (
       <div id='your-height-input' className='input-group'>
         <div className='input-header'>Select Your Height</div>
           <select
             name='select-height-feet'
-            defaultValue='default'>
+            defaultValue='default'
+            onChange={ this.handleHeightFeetInput }>
             <option
               type='select'
               disabled='disabled'
@@ -49,7 +61,8 @@ class YourHeightInput extends React.Component {
 
           <select
             name='select-height-inches'
-            defaultValue='default'>
+            defaultValue='default'
+            onChange={ this.handleHeightInchesInput }>
             <option
               type='select'
               disabled='disabled'

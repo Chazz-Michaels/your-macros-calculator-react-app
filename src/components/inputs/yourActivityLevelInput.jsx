@@ -7,7 +7,8 @@ class YourActivityLevelInput extends React.Component {
         <div className='input-header'>Select Your Activity Level</div>
         <select
           name='select-activity-level'
-          defaultValue='default'>
+          defaultValue='default'
+          onChange={ this.handleActivityLevelInput }>
           <option
             type='select'
             disabled='disabled'

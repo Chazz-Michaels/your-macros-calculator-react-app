@@ -14,7 +14,7 @@
   padding: 0.2rem 0;
 }
 input{
-  text-align: center;
+  text-align: left;
   padding: 0.1rem 0.4rem;
   max-width: 100px;
 }
@@ -28,4 +28,19 @@ input{
 }
 .macro-header {
   padding: 0.4rem;
+}
+::-webkit-input-placeholder {
+   text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-align: center;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;
+}
+
+:-ms-input-placeholder {
+   text-align: center;
 }
