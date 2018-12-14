@@ -46,6 +46,34 @@ class App extends Component {
     let x = activityLevel;
     this.setState({ activityLevel: x });
   }
+  passGoalInputToState = (goal) => {
+    let x = goal;
+    this.setState({ goal: x });
+  }
+  passProteinInputToState = (protein) => {
+    let x = protein;
+    let currentCarbs = this.state.macros[0].carbs;
+    let currentFats = this.state.macros[0].fats;
+    this.setState({ macros: [{ protein: x,
+                               carbs: currentCarbs,
+                               fats: currentFats }] });
+  }
+  passCarbsInputToState = (carbs) => {
+    let x = carbs;
+    let currentProtein = this.state.macros[0].protein;
+    let currentFats = this.state.macros[0].fats;
+    this.setState({ macros: [{ protein: currentProtein,
+                               carbs: x,
+                               fats: currentFats }] });
+  }
+  passFatsInputToState = (fats) => {
+    let x = fats;
+    let currentProtein = this.state.macros[0].protein;
+    let currentCarbs = this.state.macros[0].carbs;
+    this.setState({ macros: [{ protein: currentProtein,
+                               carbs: currentCarbs,
+                               fats: x }] });
+  }
 
   render() {
     return (
@@ -57,7 +85,11 @@ class App extends Component {
           weight={this.passWeightInputToState}
           heightFeet={this.passHeightFeetInputToState}
           heightInches={this.passHeightInchesInputToState}
-          activityLevel={this.passActivityLevelInputToState}/>
+          activityLevel={this.passActivityLevelInputToState}
+          goal={this.passGoalInputToState}
+          protein={this.passProteinInputToState}
+          carbs={this.passCarbsInputToState}
+          fats={this.passFatsInputToState}/>
         <Output
           age={this.state.age}
           gender={this.state.gender}
@@ -66,9 +98,9 @@ class App extends Component {
           heightInches={this.state.height[0].inches}
           activityLevel={this.state.activityLevel}
           goal={this.state.goal}
-          protein={this.state.protein}
-          carbs={this.state.carbs}
-          fats={this.state.fats} />
+          protein={this.state.macros[0].protein}
+          carbs={this.state.macros[0].carbs}
+          fats={this.state.macros[0].fats} />
         <Footer />
       </div>
     );

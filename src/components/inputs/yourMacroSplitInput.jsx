@@ -2,6 +2,20 @@ import React from 'react'
 import OptionsZeroTo100 from './optionsZeroTo100.jsx'
 
 class YourMacroSplitInput extends React.Component {
+
+  handleProteinInput = (e) => {
+    let value = e.target.value;
+    this.props.onHandleProteinInput(value);
+  }
+  handleCarbsInput = (e) => {
+    let value = e.target.value;
+    this.props.onHandleCarbsInput(value);
+  }
+  handleFatsInput = (e) => {
+    let value = e.target.value;
+    this.props.onHandleFatsInput(value);
+  }
+
   render () {
     return (
       <div id='your-macro-split-input' className='input-group'>
@@ -11,7 +25,8 @@ class YourMacroSplitInput extends React.Component {
             <div className='macro-header'>Protein (%)</div>
             <select
               name='select-protein-percent'
-              defaultValue='default'>
+              defaultValue='default'
+              onChange={ this.handleProteinInput }>
               <option
                 type='select'
                 disabled='disabled'
@@ -25,7 +40,8 @@ class YourMacroSplitInput extends React.Component {
             <div className='macro-header'>Carbs (%)</div>
             <select
               name='select-protein-percent'
-              defaultValue='default'>
+              defaultValue='default'
+              onChange={ this.handleCarbsInput }>
               <option
                 type='select'
                 disabled='disabled'
@@ -39,7 +55,8 @@ class YourMacroSplitInput extends React.Component {
             <div className='macro-header'>Fats (%)</div>
             <select
               name='select-protein-percent'
-              defaultValue='default'>
+              defaultValue='default'
+              onChange={ this.handleFatsInput }>
               <option
                 type='select'
                 disabled='disabled'

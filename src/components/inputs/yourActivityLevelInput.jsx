@@ -4,8 +4,7 @@ class YourActivityLevelInput extends React.Component {
 
   handleActivityLevelInput = (e) => {
     let value = e.target.value;
-    console.log(value);
-    this.props.onHAndleActivityLevelInput(value);
+    this.props.onHandleActivityLevelInput(value);
   }
 
   render () {

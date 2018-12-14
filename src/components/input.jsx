@@ -4,7 +4,7 @@ import YourGenderInput from './inputs/yourGenderInput'
 import YourWeightInput from './inputs/yourWeightInput'
 import YourHeightInput from './inputs/yourHeightInput'
 import YourActivityLevelInput from './inputs/yourActivityLevelInput'
-import YourGoalInput from './inputs/yourGoal'
+import YourGoalInput from './inputs/yourGoalInput'
 import YourMacroSplitInput from './inputs/yourMacroSplitInput'
 
 class Input extends React.Component{
@@ -34,6 +34,22 @@ class Input extends React.Component{
     let x = activityLevel;
     this.props.activityLevel(x);
   }
+  passGoalInputToApp = (goal) => {
+    let x = goal;
+    this.props.goal(x);
+  }
+  passProteinInputToApp = (protein) => {
+    let x = protein;
+    this.props.protein(x);
+  }
+  passCarbsInputToApp = (carbs) => {
+    let x = carbs;
+    this.props.carbs(x);
+  }
+  passFatsInputToApp = (fats) => {
+    let x = fats;
+    this.props.fats(x);
+  }
 
   render () {
     return (
@@ -52,11 +68,15 @@ class Input extends React.Component{
           onHandleHeightInchesInput={this.passHeightInchesInputToApp}/>
 
         <YourActivityLevelInput
-          onHAndleActivityLevelInput={this.passActivityLevelInputToApp}/>
+          onHandleActivityLevelInput={this.passActivityLevelInputToApp}/>
 
-        <YourGoalInput />
+        <YourGoalInput
+          onHandleGoalInput={this.passGoalInputToApp}/>
 
-        <YourMacroSplitInput />
+        <YourMacroSplitInput
+          onHandleProteinInput={this.passProteinInputToApp}
+          onHandleCarbsInput={this.passCarbsInputToApp}
+          onHandleFatsInput={this.passFatsInputToApp}/>
 
       </div>
     )
