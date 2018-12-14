@@ -1,13 +1,20 @@
 import React from 'react'
 
 class YourGenderInput extends React.Component {
+
+  handleGenderInput = (gender) => {
+    let value = gender.target.value;
+    this.props.onHandleGenderInput(value);
+  }
+
   render () {
     return (
       <div id='your-gender-input' className='input-group'>
         <div className='input-header'>Select Your Gender</div>
         <select
           name='select-gender'
-          defaultValue='default'>
+          defaultValue='default'
+          onChange={ this.handleGenderInput }>
           <option
             type='select'
             value='default'

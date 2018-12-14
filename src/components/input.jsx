@@ -14,13 +14,19 @@ class Input extends React.Component{
     this.props.age(x);
   }
 
+  passGenderInputToApp = (gender) => {
+    let x = gender;
+    this.props.gender(x);
+  }
+
   render () {
     return (
       <div id='input-wrapper' className='center-me'>
         <YourAgeInput
           onHandleAgeInput={this.passAgeInputToApp} />
 
-        <YourGenderInput />
+        <YourGenderInput
+          onHandleGenderInput={this.passGenderInputToApp} />
 
         <YourWeightInput />
 
