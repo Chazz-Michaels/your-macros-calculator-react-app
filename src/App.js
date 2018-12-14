@@ -26,6 +26,9 @@ class App extends Component {
   passGenderInputToState = (gender) => {
     this.setState({ gender: gender })
   }
+  passWeightInputToState = (weight) => {
+    this.setState({ weight: weight })
+  }
 
   render() {
     return (
@@ -33,7 +36,8 @@ class App extends Component {
         <Brand />
         <Input
           age={this.passAgeInputToState}
-          gender={this.passGenderInputToState} />
+          gender={this.passGenderInputToState}
+          weight={this.passWeightInputToState} />
         <Output
           age={this.state.age}
           gender={this.state.gender}

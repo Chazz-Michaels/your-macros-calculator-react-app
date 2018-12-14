@@ -2,8 +2,8 @@ import React from 'react'
 
 class YourGenderInput extends React.Component {
 
-  handleGenderInput = (gender) => {
-    let value = gender.target.value;
+  handleGenderInput = (e) => {
+    let value = e.target.value;
     this.props.onHandleGenderInput(value);
   }
 

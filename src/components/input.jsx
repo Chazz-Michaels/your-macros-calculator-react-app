@@ -19,6 +19,11 @@ class Input extends React.Component{
     this.props.gender(x);
   }
 
+  passWeightInputToApp = (weight) => {
+    let x = weight;
+    this.props.weight(x);
+  }
+
   render () {
     return (
       <div id='input-wrapper' className='center-me'>
@@ -28,7 +33,8 @@ class Input extends React.Component{
         <YourGenderInput
           onHandleGenderInput={this.passGenderInputToApp} />
 
-        <YourWeightInput />
+        <YourWeightInput
+          onHandleWeightInput={this.passWeightInputToApp} />
 
         <YourHeightInput />
 
