@@ -1,18 +1,31 @@
 import React from 'react'
+import YourGoalOutput from './outputs/yourGoalOutput'
+import YourBMROutput from './outputs/yourBMROutput'
+import YourGoalCaloriesOutput from './outputs/yourGoalCaloriesOutput'
+import YourMacroSplitOutput from './outputs/yourMacroSplitOutput'
+import YourMacroGramsOutput from './outputs/yourMacroGramsOutput'
 
 class Output extends React.Component{
   render () {
     return (
       <React.Fragment>
         <div id='output-wrapper' className='center-me'>
-          <div className='output-header'>Your Aesthetic Goal: {this.props.age}</div>
-          <div className='output-header'>Your Basal Metabolic Rate: {this.props.gender}</div>
-          <div className='output-header'>Your Goal Calories: {this.props.weight}</div>
-          <div className='output-header'>Your Macro Split (%): {this.props.heightFeet}</div>
-          <div className='output-header'>Your Daily Protein: {this.props.protein}</div>
-          <div className='output-header'>Your Daily Carbs: {this.props.carbs}</div>
-          <div className='output-header'>Your Daily Fats: {this.props.fats}</div>
+          <YourGoalOutput
+            goal={this.props.goal} />
+          <YourBMROutput
+            age={this.props.age}
+            gender={this.props.gender}
+            heightFeet={this.props.heightFeet}
+            heightInches={this.props.heightInches}
+            weight={this.props.weight} />
+          <YourGoalCaloriesOutput />
+          <YourMacroSplitOutput
+            protein={this.props.protein}
+            carbs={this.props.carbs}
+            fats={this.props.fats} />
+          <YourMacroGramsOutput />
         </div>
+
         <div id='output-wrapper' className='center-me'>
           <div className='output-group'>Output goes here</div>
           <div className='output-header'>Your Age: {this.props.age}</div>
