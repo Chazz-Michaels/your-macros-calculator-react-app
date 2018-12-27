@@ -11,6 +11,7 @@ class YourActivityLevelInput extends React.Component {
     return (
       <div id='your-activity-level-input' className='input-group'>
         <div className='input-header'>Select Your Activity Level</div>
+        <div className='divider'></div>
         <select
           name='select-activity-level'
           defaultValue='default'

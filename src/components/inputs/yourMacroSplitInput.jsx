@@ -20,7 +20,8 @@ class YourMacroSplitInput extends React.Component {
     return (
       <div id='your-macro-split-input' className='input-group'>
         <div className='input-header'>Select Your Macro Split</div>
-
+        <div className='divider'></div>
+        
           <div className='macro-group'>
             <div className='macro-header'>Protein (%)</div>
             <select

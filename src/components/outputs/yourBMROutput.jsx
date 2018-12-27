@@ -4,10 +4,11 @@ class YourBMROutput extends React.Component {
 
   render () {
     return (
-      <React.Fragment>
+      <div className='output-group'>
         <div className='output-header'>Your Basal Metabolic Rate:</div>
-        <div>{isNaN(this.props.bmr) ? 0 : this.props.bmr}</div>
-      </React.Fragment>
+        <div className='divider'></div>
+        <div className='output-value'>{isNaN(this.props.bmr) ? 0 : this.props.bmr}</div>
+      </div>
     )
   }
 }

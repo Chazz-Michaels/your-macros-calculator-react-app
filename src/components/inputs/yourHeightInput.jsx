@@ -16,6 +16,7 @@ class YourHeightInput extends React.Component {
     return (
       <div id='your-height-input' className='input-group'>
         <div className='input-header'>Select Your Height</div>
+        <div className='divider'></div>
           <select
             name='select-height-feet'
             defaultValue='default'

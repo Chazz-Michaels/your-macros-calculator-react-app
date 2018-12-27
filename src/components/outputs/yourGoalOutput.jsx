@@ -3,10 +3,11 @@ import React from 'react'
 class YourGoalOutput extends React.Component {
   render () {
     return (
-      <React.Fragment>
+      <div className='output-group'>
         <div className='output-header'>Your Aesthetic Goal:</div>
-        <div>{this.props.goal}</div>
-      </React.Fragment>
+        <div className='divider'></div>
+        <div className='output-value'>{this.props.goal}</div>
+      </div>
     )
   }
 }

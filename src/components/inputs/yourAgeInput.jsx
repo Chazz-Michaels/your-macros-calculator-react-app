@@ -15,6 +15,7 @@ class YourAgeInput extends React.Component {
     return (
       <div id='your-age-input' className='input-group'>
         <div className='input-header'>Enter Your Age:</div>
+        <div className='divider'></div>
         <input
           name='age'
           placeholder='Your age'

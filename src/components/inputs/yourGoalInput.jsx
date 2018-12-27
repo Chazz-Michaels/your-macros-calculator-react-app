@@ -11,6 +11,7 @@ class YourGoalInput extends React.Component {
     return (
       <div id='your-goal-input' className='input-group'>
         <div className='input-header'>Select Your Aesthetic Goal</div>
+        <div className='divider'></div>
         <select
           name='select-goal'
           defaultValue='default'

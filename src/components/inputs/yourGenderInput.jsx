@@ -11,6 +11,7 @@ class YourGenderInput extends React.Component {
     return (
       <div id='your-gender-input' className='input-group'>
         <div className='input-header'>Select Your Gender</div>
+        <div className='divider'></div>
         <select
           name='select-gender'
           defaultValue='default'
