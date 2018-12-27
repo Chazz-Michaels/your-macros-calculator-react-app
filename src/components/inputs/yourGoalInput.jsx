@@ -24,8 +24,8 @@ class YourGoalInput extends React.Component {
           <option
             type='select'
             name='bulkAggressive'
-            value='Bulk (aggresive)'>
-              Bulk (aggresive)
+            value='Bulk (aggressive)'>
+              Bulk (aggressive)
           </option>
           <option
             type='select'
@@ -48,7 +48,7 @@ class YourGoalInput extends React.Component {
           <option
             type='select'
             name='cutAggressive'
-            value='cutAggressive'>
+            value='Fat Loss (aggressive)'>
               Fat Loss (aggressive)
           </option>
         </select>
