@@ -20,11 +20,13 @@ input {
   margin: 0.2rem;
   font-size: 1.2rem;
   max-width: 150px;
+  color: var(--darkgray);
 }
 select {
   padding: 0.1rem 0.4rem;
   margin: 0.2rem;
   font-size: 1.2rem;
+  color: var(--darkgray);
 }
 .macro-group {
   display: inline-block;
@@ -36,6 +38,7 @@ select {
 }
 .macro-header {
   padding: 0.4rem;
+  font-size: 1.2rem;
 }
 ::-webkit-input-placeholder {
    text-align: center;
