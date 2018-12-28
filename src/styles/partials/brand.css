@@ -7,20 +7,20 @@
 #brand-wrapper {
   position: absolute;
   top: 0;
-  max-width: 620px;
+  /*max-width: 520px;*/
+  min-width: 416px;
   width: 100%;
   margin: auto;
   background: var(--darkgray);
-  border: 5px solid var(--white);
-  border-top: none;
+  border-bottom: 5px solid var(--white);
 }
 #brand {
   font-family: var(--fontBrand);
-  font-size: 5rem;
+  font-size: 3.3rem;
   font-weight: 300;
 }
 #motto {
-  font-size: 1.2rem;
+  font-size: 1rem;
   max-width: 400px;
   margin: inherit;
   padding: 0 0 0.8rem 0;
