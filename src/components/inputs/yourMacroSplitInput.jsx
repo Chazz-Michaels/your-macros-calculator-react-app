@@ -1,6 +1,5 @@
 import React from 'react'
 import OptionsZeroTo100 from './optionsZeroTo100.jsx'
-import Avo from '../../images/avo.png'
 
 class YourMacroSplitInput extends React.Component {
 
@@ -21,7 +20,6 @@ class YourMacroSplitInput extends React.Component {
   }
 
   render () {
-    let avoImg = document.createElement('img');
     return (
       <div id='your-macro-split-input' className='input-group'>
         <div className='input-header'>Select Your Macro Split</div>
