@@ -29,6 +29,17 @@ select {
   font-size: 1rem;
   color: var(--darkgray);
 }
+.warnUntilMacrosEqual100 {
+  font-size: 0.9rem;
+  font-weight: 100;
+  color: var(--wine);
+}
+#warningMessage {
+  display: block;
+}
+#successMessage {
+  display: none;
+}
 ::-webkit-input-placeholder {
    text-align: center;
 }

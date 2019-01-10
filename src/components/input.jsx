@@ -77,7 +77,6 @@ class Input extends React.Component{
           onHandleProteinInput={this.passProteinInputToApp}
           onHandleCarbsInput={this.passCarbsInputToApp}
           onHandleFatsInput={this.passFatsInputToApp}/>
-
       </div>
     )
   }
